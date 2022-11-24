@@ -6,11 +6,18 @@
 		<Authors>Lars Behrmann (netfw) and Rene Mihula (netstandard)</Authors>
 		<Copyright>Copyright © 2005 Lars Behrmann, 2022 Rene Mihula</Copyright>
 		<OutputType>Library</OutputType>
-		<Description>A OpenDocument Library. Create OpenDocument documents with only few lines of code.</Description>
-		<PackageId>Mihula.$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
+		<Description>A OpenDocument Library - netstandard version. Create OpenDocument documents with only few lines of code.</Description>
+		<RootNamespace>AODL</RootNamespace>
+
+    <PackageProjectUrl>https://github.com/mihula/AODL</PackageProjectUrl>
+    <PackageTags>ODL, ODT, OpenOffice, LibreOffice, transform, text, library</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <MinVerMinimumMajorMinor>1.3</MinVerMinimumMajorMinor>
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+	  <None Include="icon.png" Pack="true" PackagePath=""/>
 		<EmbeddedResource Include="AODL.Resources.OD.spreadsheetsettings.xml" />
 		<EmbeddedResource Include="AODL.Resources.OD.spreadsheetmanifest.xml" />
 		<EmbeddedResource Include="AODL.Resources.OD.spreadsheetcontent.xml" />
