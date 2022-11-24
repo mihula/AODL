@@ -1,584 +1,551 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ProjectGuid>{0AAF356F-7D61-4A74-964C-64ADF7EBBD03}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <AssemblyName>AODL</AssemblyName>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <TargetFrameworkVersion />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>bin\Debug\</OutputPath>
-    <DebugSymbols>true</DebugSymbols>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Optimize>false</Optimize>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>bin\Release\</OutputPath>
-    <DebugSymbols>false</DebugSymbols>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>pdbonly</DebugType>
-    <ErrorReport>prompt</ErrorReport>
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>.\AODLReferences\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.XML" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs">
+    <Compile Update="Properties\AssemblyInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\UnknownContent.cs">
+    <Compile Update="AODL.Document\Content\UnknownContent.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\IImporter.cs">
+    <Compile Update="AODL.Document\Import\IImporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\TabStopLeaderStyles.cs">
+    <Compile Update="AODL.Document\Styles\TabStopLeaderStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\TableOfContentsIndexTemplateCollection.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\TableOfContentsIndexTemplateCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\FrameBuilder.cs">
+    <Compile Update="AODL.Document\Content\Draw\FrameBuilder.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\FamiliyStyles.cs">
+    <Compile Update="AODL.Document\Styles\FamiliyStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\CellSpan.cs">
+    <Compile Update="AODL.Document\Content\Tables\CellSpan.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\SpreadsheetDocuments\DocumentSetting.cs">
+    <Compile Update="AODL.Document\SpreadsheetDocuments\DocumentSetting.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\TabStopTypes.cs">
+    <Compile Update="AODL.Document\Styles\TabStopTypes.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\ColumnProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\ColumnProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\TableBuilder.cs">
+    <Compile Update="AODL.Document\Content\Tables\TableBuilder.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\TableProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\TableProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\CellSpanCollection.cs">
+    <Compile Update="AODL.Document\Content\Tables\CellSpanCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\TableOfContentsSource.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\TableOfContentsSource.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\TableCollection.cs">
+    <Compile Update="AODL.Document\Content\Tables\TableCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Collections\CollectionWithEvents.cs">
+    <Compile Update="AODL.Document\Collections\CollectionWithEvents.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\TextAlignments.cs">
+    <Compile Update="AODL.Document\Styles\Properties\TextAlignments.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\IContent.cs">
+    <Compile Update="AODL.Document\Content\IContent.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\IText.cs">
+    <Compile Update="AODL.Document\Content\Text\IText.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ListStyle.cs">
+    <Compile Update="AODL.Document\Styles\ListStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Footnote.cs">
+    <Compile Update="AODL.Document\Content\Text\Footnote.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\IContentContainer.cs">
+    <Compile Update="AODL.Document\Content\IContentContainer.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\FootnoteType.cs">
+    <Compile Update="AODL.Document\Content\Text\FootnoteType.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ListStyles.cs">
+    <Compile Update="AODL.Document\Styles\ListStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\SpreadsheetDocuments\Tables.Style\OfficeValueTypes.cs">
+    <Compile Update="AODL.Document\SpreadsheetDocuments\Tables.Style\OfficeValueTypes.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Exceptions\AODLException.cs">
+    <Compile Update="AODL.Document\Exceptions\AODLException.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\FontFamilies.cs">
+    <Compile Update="AODL.Document\Styles\FontFamilies.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\TabStopStyle.cs">
+    <Compile Update="AODL.Document\Styles\TabStopStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Exceptions\AODLWarning.cs">
+    <Compile Update="AODL.Document\Exceptions\AODLWarning.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\Graphic.cs">
+    <Compile Update="AODL.Document\Content\Draw\Graphic.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\OpenDocument\OpenDocumentTextExporter.cs">
+    <Compile Update="AODL.Document\Export\OpenDocument\OpenDocumentTextExporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\Column.cs">
+    <Compile Update="AODL.Document\Content\Tables\Column.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentStyles.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\Bookmark.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\Bookmark.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\SpreadsheetDocuments\DocumentStyles.cs">
+    <Compile Update="AODL.Document\SpreadsheetDocuments\DocumentStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\DrawArea.cs">
+    <Compile Update="AODL.Document\Content\Draw\DrawArea.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\ColumnCollection.cs">
+    <Compile Update="AODL.Document\Content\Tables\ColumnCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\BookmarkType.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\BookmarkType.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\TabStopStyleCollection.cs">
+    <Compile Update="AODL.Document\Styles\TabStopStyleCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\IDocument.cs">
+    <Compile Update="AODL.Document\IDocument.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\TextSequence.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\TextSequence.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\ImageMap.cs">
+    <Compile Update="AODL.Document\Content\Draw\ImageMap.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\ExportHandler.cs">
+    <Compile Update="AODL.Document\Export\ExportHandler.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\FrameStyle.cs">
+    <Compile Update="AODL.Document\Styles\FrameStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ParagraphStyle.cs">
+    <Compile Update="AODL.Document\Styles\ParagraphStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\OpenDocument\OpenDocumentImporter.cs">
+    <Compile Update="AODL.Document\Import\OpenDocument\OpenDocumentImporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\FormatedText.cs">
+    <Compile Update="AODL.Document\Content\Text\FormatedText.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ParentStyles.cs">
+    <Compile Update="AODL.Document\Styles\ParentStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\GraphicProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\GraphicProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\DocumentSupportInfo.cs">
+    <Compile Update="AODL.Document\Export\DocumentSupportInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\DrawAreaRectangle.cs">
+    <Compile Update="AODL.Document\Content\Draw\DrawAreaRectangle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\TextControl\LineBreak.cs">
+    <Compile Update="AODL.Document\Content\Text\TextControl\LineBreak.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Helper\Colors.cs">
+    <Compile Update="AODL.Document\Helper\Colors.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\TextProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\TextProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\IStyleCollection.cs">
+    <Compile Update="AODL.Document\Styles\IStyleCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\TextStyle.cs">
+    <Compile Update="AODL.Document\Styles\TextStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\LineStyles.cs">
+    <Compile Update="AODL.Document\Styles\LineStyles.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\IPropertyCollection.cs">
+    <Compile Update="AODL.Document\Styles\Properties\IPropertyCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\TextPropertieHelper.cs">
+    <Compile Update="AODL.Document\Styles\Properties\TextPropertieHelper.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\TextControl\TabStop.cs">
+    <Compile Update="AODL.Document\Content\Text\TextControl\TabStop.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Border.cs">
+    <Compile Update="AODL.Document\Styles\Border.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\UnknownStyle.cs">
+    <Compile Update="AODL.Document\Styles\UnknownStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\OfficeEvents\EventListener.cs">
+    <Compile Update="AODL.Document\Content\OfficeEvents\EventListener.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\UnknownProperty.cs">
+    <Compile Update="AODL.Document\Styles\Properties\UnknownProperty.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\IStyle.cs">
+    <Compile Update="AODL.Document\Styles\IStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\PlainText\CsvImporter.cs">
+    <Compile Update="AODL.Document\Import\PlainText\CsvImporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\DrawAreaCircle.cs">
+    <Compile Update="AODL.Document\Content\Draw\DrawAreaCircle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Helper\SizeConverter.cs">
+    <Compile Update="AODL.Document\Helper\SizeConverter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentConfiguration2.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentConfiguration2.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\ListLevelProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\ListLevelProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\RowStyle.cs">
+    <Compile Update="AODL.Document\Styles\RowStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\TextControl\WhiteSpace.cs">
+    <Compile Update="AODL.Document\Content\Text\TextControl\WhiteSpace.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\OfficeEvents\EventListeners.cs">
+    <Compile Update="AODL.Document\Content\OfficeEvents\EventListeners.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\IHtml.cs">
+    <Compile Update="AODL.Document\Content\IHtml.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\Row.cs">
+    <Compile Update="AODL.Document\Content\Tables\Row.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Paragraph.cs">
+    <Compile Update="AODL.Document\Content\Text\Paragraph.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\PlainText\PlainTextImporter.cs">
+    <Compile Update="AODL.Document\Import\PlainText\PlainTextImporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\CellStyle.cs">
+    <Compile Update="AODL.Document\Styles\CellStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\RowCollection.cs">
+    <Compile Update="AODL.Document\Content\Tables\RowCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\TextControl\WhiteSpaceHelper.cs">
+    <Compile Update="AODL.Document\Content\Text\TextControl\WhiteSpaceHelper.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ListLevelStyle.cs">
+    <Compile Update="AODL.Document\Styles\ListLevelStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\SectionStyle.cs">
+    <Compile Update="AODL.Document\Styles\SectionStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\ImportHandler.cs">
+    <Compile Update="AODL.Document\Import\ImportHandler.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\ITextContainer.cs">
+    <Compile Update="AODL.Document\Content\Text\ITextContainer.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\ParagraphBuilder.cs">
+    <Compile Update="AODL.Document\Content\Text\ParagraphBuilder.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Header.cs">
+    <Compile Update="AODL.Document\Content\Text\Header.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\TableOfContents.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\TableOfContents.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Headings.cs">
+    <Compile Update="AODL.Document\Content\Text\Headings.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\DrawTextBox.cs">
+    <Compile Update="AODL.Document\Content\Draw\DrawTextBox.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\SpreadsheetDocuments\SpreadsheetDocument.cs">
+    <Compile Update="AODL.Document\SpreadsheetDocuments\SpreadsheetDocument.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\IProperty.cs">
+    <Compile Update="AODL.Document\Styles\Properties\IProperty.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\ParagraphCollection.cs">
+    <Compile Update="AODL.Document\Content\Text\ParagraphCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ListLevelStyleCollection.cs">
+    <Compile Update="AODL.Document\Styles\ListLevelStyleCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\ParagraphProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\ParagraphProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\IHtmlStyle.cs">
+    <Compile Update="AODL.Document\Styles\IHtmlStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentManifest.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentManifest.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\ParagraphHelper.cs">
+    <Compile Update="AODL.Document\Styles\Properties\ParagraphHelper.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\UserDefinedInfo.cs">
+    <Compile Update="AODL.Document\TextDocuments\UserDefinedInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\ITextCollection.cs">
+    <Compile Update="AODL.Document\Content\Text\ITextCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\SpreadsheetDocuments\DocumentManifest.cs">
+    <Compile Update="AODL.Document\SpreadsheetDocuments\DocumentManifest.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\TableOfContentsIndexTemplate.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\TableOfContentsIndexTemplate.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\Indexes\IndexEntryTypes.cs">
+    <Compile Update="AODL.Document\Content\Text\Indexes\IndexEntryTypes.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\RowHeader.cs">
+    <Compile Update="AODL.Document\Content\Tables\RowHeader.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\SimpleText.cs">
+    <Compile Update="AODL.Document\Content\Text\SimpleText.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentPicture.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentPicture.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentSetting.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentSetting.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\ColumnStyle.cs">
+    <Compile Update="AODL.Document\Styles\ColumnStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\RowProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\RowProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\TableStyle.cs">
+    <Compile Update="AODL.Document\Styles\TableStyle.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\ListItem.cs">
+    <Compile Update="AODL.Document\Content\Text\ListItem.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\IContentCollection.cs">
+    <Compile Update="AODL.Document\Content\IContentCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\CellCollection.cs">
+    <Compile Update="AODL.Document\Content\Tables\CellCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentPictureCollection.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentPictureCollection.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\TextBuilder.cs">
+    <Compile Update="AODL.Document\Content\Text\TextBuilder.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\SectionProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\SectionProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Styles\Properties\CellProperties.cs">
+    <Compile Update="AODL.Document\Styles\Properties\CellProperties.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\UnknownTextContent.cs">
+    <Compile Update="AODL.Document\Content\Text\UnknownTextContent.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\Cell.cs">
+    <Compile Update="AODL.Document\Content\Tables\Cell.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\DocumentMetadata.cs">
+    <Compile Update="AODL.Document\TextDocuments\DocumentMetadata.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\Html\OpenDocumentHtmlExporter.cs">
+    <Compile Update="AODL.Document\Export\Html\OpenDocumentHtmlExporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\OpenDocument\NodeProcessors\LocalStyleProcessor.cs">
+    <Compile Update="AODL.Document\Import\OpenDocument\NodeProcessors\LocalStyleProcessor.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\List.cs">
+    <Compile Update="AODL.Document\Content\Text\List.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Draw\Frame.cs">
+    <Compile Update="AODL.Document\Content\Draw\Frame.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Tables\Table.cs">
+    <Compile Update="AODL.Document\Content\Tables\Table.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\OpenDocument\NodeProcessors\TextContentProcessor.cs">
+    <Compile Update="AODL.Document\Import\OpenDocument\NodeProcessors\TextContentProcessor.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Content\Text\XLink.cs">
+    <Compile Update="AODL.Document\Content\Text\XLink.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\Html\HTMLContentBuilder.cs">
+    <Compile Update="AODL.Document\Export\Html\HTMLContentBuilder.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\TextDocument.cs">
+    <Compile Update="AODL.Document\TextDocuments\TextDocument.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\TextDocuments\TextDocumentHelper.cs">
+    <Compile Update="AODL.Document\TextDocuments\TextDocumentHelper.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\DocumentTypes.cs">
+    <Compile Update="AODL.Document\DocumentTypes.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PrivateImplementationDetails.cs">
+    <Compile Update="PrivateImplementationDetails.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\Html\HTMLStyleBuilder.cs">
+    <Compile Update="AODL.Document\Export\Html\HTMLStyleBuilder.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\IExporter.cs">
+    <Compile Update="AODL.Document\Export\IExporter.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Export\IPublisherInfo.cs">
+    <Compile Update="AODL.Document\Export\IPublisherInfo.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="AODL.Document\Import\OpenDocument\NodeProcessors\MainContentProcessor.cs">
+    <Compile Update="AODL.Document\Import\OpenDocument\NodeProcessors\MainContentProcessor.cs">
       <AutoGen>false</AutoGen>
       <DesignTimeSharedInput>false</DesignTimeSharedInput>
     </Compile>
@@ -593,5 +560,11 @@
     <EmbeddedResource Include="AODL.Resources.OD.styles.xml" />
     <EmbeddedResource Include="AODL.Resources.OD.settings.xml" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.4.355802">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib" Version="1.4.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
 </Project>
