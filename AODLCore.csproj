@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.2.9</Version>
+
 		<Authors>Lars Behrmann (netfw) and Rene Mihula (netstandard)</Authors>
 		<Copyright>Copyright © 2005 Lars Behrmann, 2022 Rene Mihula</Copyright>
 		<OutputType>Library</OutputType>
