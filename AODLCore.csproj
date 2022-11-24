@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://github.com/mihula/AODL</PackageProjectUrl>
     <PackageTags>ODL, ODT, OpenOffice, LibreOffice, transform, text, library</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <MinVerTagPrefix>v</MinVerTagPrefix>
     <!--<MinVerMinimumMajorMinor>1.3</MinVerMinimumMajorMinor>-->
 	</PropertyGroup>
 
