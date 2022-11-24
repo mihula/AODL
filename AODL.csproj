@@ -3,11 +3,11 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>1.3.0</Version>
-		<Authors>Lars Behrmann (netfw) and PROVYS, DCIT (netstandard)</Authors>
-		<Copyright>Copyright © 2022 Provys, 2005 © Lars Behrmann</Copyright>
+		<Authors>Lars Behrmann (netfw) and Rene Mihula (netstandard)</Authors>
+		<Copyright>Copyright © 2005 Lars Behrmann, 2022 Rene Mihula</Copyright>
 		<OutputType>Library</OutputType>
 		<Description>A OpenDocument Library. Create OpenDocument documents with only few lines of code.</Description>
-		<PackageId>Provys.Standard.$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
+		<PackageId>Mihula.$(MSBuildProjectName.Replace(" ", "_"))</PackageId>
 	</PropertyGroup>
 
 	<ItemGroup>
