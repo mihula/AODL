@@ -8,6 +8,12 @@
 		<Description>A OpenDocument Library - netstandard version. Create OpenDocument documents with only few lines of code.</Description>
 		<RootNamespace>AODL</RootNamespace>
 
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <!-- If all members are not documented, you can disable the compiler warnings -->
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/mihula/AODL</PackageProjectUrl>
     <PackageTags>ODL, ODT, OpenOffice, LibreOffice, transform, text, library</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
@@ -18,6 +24,7 @@
 	<ItemGroup>
 	  <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
 	  <None Include="icon.png" Pack="true" PackagePath=""/>
+	  <None Include="README.md" Pack="true" PackagePath=""/>
 		<EmbeddedResource Include="AODL.Resources.OD.spreadsheetsettings.xml" />
 		<EmbeddedResource Include="AODL.Resources.OD.spreadsheetmanifest.xml" />
 		<EmbeddedResource Include="AODL.Resources.OD.spreadsheetcontent.xml" />
@@ -35,6 +42,10 @@
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		  <PrivateAssets>all</PrivateAssets>
 		</PackageReference>
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>		
 		<PackageReference Include="SharpZipLib" Version="1.4.1" />
 		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
 	</ItemGroup>
