@@ -270,7 +270,7 @@ namespace AODL.Document.TextDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.fonts.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.fonts.xml");
 				XmlDocument xmlDocument = new XmlDocument();
 				xmlDocument.Load(manifestResourceStream);
 				if (this.XmlDoc.SelectSingleNode(string.Concat("/office:document-content/office:font-face-decls/style:font-face[@style:name='", fontname, "']"), this.NamespaceManager) == null)

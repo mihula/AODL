@@ -16,7 +16,7 @@ namespace AODL.Document.SpreadsheetDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.spreadsheetsettings.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.spreadsheetsettings.xml");
 				base.Settings = new XmlDocument();
 				base.Settings.Load(manifestResourceStream);
 			}

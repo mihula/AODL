@@ -441,7 +441,7 @@ namespace AODL.Document.SpreadsheetDocuments
         {
             try
             {
-                Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.spreadsheetcontent.xml");
+                Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.spreadsheetcontent.xml");
                 this._xmldoc = new XmlDocument();
                 this._xmldoc.Load(manifestResourceStream);
             }

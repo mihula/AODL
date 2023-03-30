@@ -133,7 +133,7 @@ namespace AODL.Document.Export.Html
 			string str;
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.htmltemplate.html");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.htmltemplate.html");
 				string str1 = null;
 				StreamReader streamReader = new StreamReader(manifestResourceStream);
 				try

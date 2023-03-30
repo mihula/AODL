@@ -49,7 +49,7 @@ namespace AODL.Document.TextDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.settings.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.settings.xml");
 				this.Settings = new XmlDocument();
 				this.Settings.Load(manifestResourceStream);
 			}

@@ -93,7 +93,7 @@ namespace AODL.Document.TextDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.manifest.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.manifest.xml");
 				this.Manifest = new XmlDocument();
 				this.Manifest.Load(manifestResourceStream);
 			}

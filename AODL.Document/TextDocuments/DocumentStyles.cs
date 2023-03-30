@@ -188,7 +188,7 @@ namespace AODL.Document.TextDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.styles.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.styles.xml");
 				this.Styles = new XmlDocument();
 				this.Styles.Load(manifestResourceStream);
 			}

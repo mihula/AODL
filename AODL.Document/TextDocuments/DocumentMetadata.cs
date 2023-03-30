@@ -633,7 +633,7 @@ namespace AODL.Document.TextDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.meta.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.meta.xml");
 				this.Meta = new XmlDocument();
 				this.Meta.Load(manifestResourceStream);
 				this.Init();

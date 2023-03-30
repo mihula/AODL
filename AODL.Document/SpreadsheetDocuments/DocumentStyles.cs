@@ -16,7 +16,7 @@ namespace AODL.Document.SpreadsheetDocuments
 		{
 			try
 			{
-				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.Resources.OD.spreadsheetstyles.xml");
+				Stream manifestResourceStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("AODL.AODL.Resources.OD.spreadsheetstyles.xml");
 				base.Styles = new XmlDocument();
 				base.Styles.Load(manifestResourceStream);
 			}
